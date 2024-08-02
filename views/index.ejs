@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/all.css">
+    <title>Set the way</title>
+    
+</head>
+<body>
+    <div class="box">
+
+        <h1>É <%= KindOfDay %> !</h1>
+    
+    </div>
+    <div class="box">
+        <div class="item-box">
+            <% for(let i = 0; i < ItemLista.length; i++){ %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p><%= ItemLista[i] %></p>
+                </div>
+            <% }%>
+        </div>
+            
+        <form action="/" method="post">
+            <input type="text" name="novo" placeholder="Inserir Novo Item">
+            <button type="submit" class="btn">+</button>
+        </form>    
+    </div>
+        
+</body>
+</html>

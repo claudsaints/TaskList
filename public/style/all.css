@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+body{
+    display: block;
+    height: 100%;
+    background:  linear-gradient(blue,green,yellow);
+}
+h1{
+    color: rgb(0, 250, 0);
+    text-align: center;
+    padding: 10px;
+}
+.box{
+    max-width: 400px;
+    margin:  50px auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+    
+}
+.item{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    word-break: break-all;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+p{
+    margin-left: 25px;
+    font-size: xx-large;
+    color: black;
+    width: 80%;
+}
+input:checked+p{
+    color: rgb(180, 0, 0);
+    text-decoration:line-through
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(0, 250, 0);
+  }
+  
+form{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+form input{
+    text-align: center;
+    font-size: x-large;
+    width: 90%;
+    height: 50px;
+    margin: 0;
+    border: none;
+}
+form button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(0, 250, 0);
+}
